@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <form name="form2" action="https://www.google.com.br" method="GET">
+        <label for="nome">Nome</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome"/>
+        <br><br>
+
+        <label for="">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Seu email">
+        <br><br>
+
+        <label>Senha:</label><br>
+        <input name="senha" type="password" /><br><br>
+        
+        <label>Repetir Senha: </label><br>
+        <input name="rep_senha" type="password" />
+        <br><br>
+
+        <label for="estado">Estados</label><br>
+        <select name="estado" id="estado">
+            <option value="">Escolha</option>
+            <option value="sp">São paulo</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="bh">Bahia</option>
+        </select>
+         <br><br>
+
+        <label>Aceita receber informaçoes</label><br>
+        <input type="radio" id="aceita-sim" name="aceita" value="sim">Sim
+        <input type="radio" id="aceita-nao" name="aceita" value="nao">Não
+        <br><br>
+        
+        <label>Hobbies</label><br>
+        <input type="checkbox" id="hob-musica" name="hob-musica" value="Música">Música
+        <input type="checkbox" id="hob-futebol" name="hob-futebol" value="Futebol">Futebol
+        <input type="checkbox" id="hob-filmes" name="hob-filmes" value="Filmes">Filmes
+        <br><br>
+
+        <label for="opiniao">Sua Opinião</label><br>
+        <textarea name="opiniao" id="opiniao"></textarea>
+        <br><br>
+
+        <button type="submit"  onclick="return validar()">Enviar Dados</button>
+    
+</body>
+</html>

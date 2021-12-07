@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"> <!-- Seleciona a cadeia de caracteres para o padrão de acentução que usamos no português -->
+        <link rel="stylesheet" type="text/css" href="./css/style.css" /> <!-- Faz o link para o caminho do arquivo css-->
+        <title>Manipulando o Estilo do Site pela DOM</title> <!-- Nome da abinha do navegador  -->
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="manipula">
+            <p>Com base nos argumentos apresentados na aula, é possivel entender que
+            uma coisa é uma coisa e outra coisa é outra coisa, admito que não concordo nem discordo,
+            muito pelo contrário.</p> 
+            <p class="paragrafo">É factivel que a Terra é um dos planetas mais conhecidos
+            do mundo, mesmo sabendo que a vida é uma sucessão de sucessivos que sucedem sucessivamente sem cessar. 
+            Agora, mais do que nunca, é a hora, afinal, o importante é o que importa, pois onde quer que você esteja,
+            você sempre estará lá.</p>
+        </div>
+        <br>
+        <hr>
+ 
+        <h2 class="chamada">Altere o texto acima clicando nos botões</h2>
+ 
+    <div id="botoes">
+        <!--Botão 01 -Atualizar a pagina e desfazer mudanças do DOM-->
+        <input type="button" value="Atualizar" onclick="window.location.reload()"/> 
+
+        <!--Botão 02 -Mudar tamanho da fonte-->
+        <input type="button" value="Tamanho Fonte" onclick="mudaTamanhoFonte()"/>
+
+        <!--Botão 03 mudar cor da fonte-->
+        <input type="button" value="Mudar Cor" onclick="mudarCor()"/>
+
+        <!--Botão 04 mudar cor backgroundDiv-->
+        <input type="button" value="Background"  onclick="backgroundDiv()"/>
+
+        <!--Botão 05  Italico mudar fonte italico-->
+        <input type="button" value="Italico" onclick="mudarItalico()"/>
+
+        <!--Botão 06  Negrito Mudar para negrito-->
+        <input type="button" value=" Negrito" onclick="botaoNegrito()"/>
+
+        <!--Botão 07 Incluir borda-->
+        <input type="button" value="Borda" onclick="incluirBorda()"/>
+
+        <!--Botão 08 remover borda-->
+        <input type="button" value="Remover Borda" onclick="removerBorda()"/>
+
+        <!--Botão 09 remover div do paragrafo-->
+        <input type="button" value="Remover Div" onclick="removerDiv()"/>
+        
+        <!--Botão 10 reaparecer o conteudo da div-->
+        <input type="button" value="Reaparecer Div" onclick="aparecerDiv()"/>
+        
+        <!--Botão 11 Altera o texto dentro da tag h2-->
+        <input type="button" value="Não" onclick="nao()"/>
+
+        <!--Botão 12 mudar background -->
+        <input type="button" value="backgroundp" onclick="backgroundp()"/>
+        
+        <!--Botão 13 mudar cor do botao-->
+        <input type="button" value="Mudar Botão" onclick="mudarBotao()"/>
+        
+        <!--Botão 14 Mudar todos botões -->
+        <input type="button" value="Mudar Todos Botões" onclick="mudarTodosBotoes()"/>  
+        
+        <!--Botão 15  Contar todos botões-->
+        <input type="button" value="Contar Botões" onclick="contarTodosBotoes()"/>
+        
+        <!--Botão 16 censura função-->
+        <input type="button" value="Censura" onclick="censura()"/>
+        
+        <!--Botão 17  -->
+        <input type="button" value="Trocar Fundo" onclick="fundo()"/>
+
+        <!--Botão 12 mudar cor paragrafo -->
+        <input type="button" value="Trocar imagem" onclick="imagem()"/>
+        
+        
+    </div>    
+
+    
+    <img id="image" src="./imagens/xuxa.jpg">
+    
+</body>
+</html>
